@@ -15,6 +15,19 @@ class App extends Component {
     };
 
 
+    switchNameHandler = () =>{
+
+            this.setState({
+        
+                persons:[
+                    {name: ' tim'},
+                    {name: ' james'}
+                ]
+
+            })
+    }
+
+
 render(){
 
 
@@ -23,8 +36,11 @@ render(){
         <div> 
 
             <Person name={this.state.persons[1].name}> horse riding </Person>
-            <button> next person</button>
-            <Person name={this.state.persons[0].name}> swimming</Person>
+            <button onClick={this.switchNameHandler}> next person</button>
+            <Person 
+            name={this.state.persons[0].name}
+            clickMe={this.switchNameHandler}
+            > swimming</Person>
             </div>
     );  
 };

@@ -10,7 +10,7 @@ const Person = (props) => {
         <h1> my name is {props.name} </h1>
             <p> I am   {age}</p>
 
-            <p> my hobbies are : {props.children}</p>
+            <p onClick={props.clickMe}> my hobbies are : {props.children}</p>
         </div>
     );
 };
