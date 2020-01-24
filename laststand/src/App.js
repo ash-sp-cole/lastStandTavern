@@ -8,7 +8,7 @@ class App extends Component {
 
         persons:[
             {name: ' ash'},
-            {name: ' james'}
+       
         ]
 
     };
