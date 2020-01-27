@@ -1,65 +1,70 @@
-
 import React, { Component } from 'react';
 import Input from './Input/input';
 import Output from './Output/output';
-import './app.css';
-class App extends Component {
+
+
+class App extends Component  {
+
 
     state = {
+peopleArray:
 
-        username: "ashley",
-        showOutput: false
-
-    }
-  
-
-
-    usernameChangedHandler = (e) => {
-
-
-        this.setState({ username: e.target.value })
-
+[
+{name: "Ash",age : 30},
+{name: "Laura",age : 21},
+{name: "Sam",age : 19},
+{name: "Daniel",age : 64},
+],
+showDisplay:  true
 
     }
-
-    togglePersonsHandler = (e) => {
-
-            const doesShow = this.state.showOutput;
-            this.setState({showOutput: !doesShow});
+    
 
 
-    }
+render(){
 
-    render() {
+let display = null;
 
+if (this.state.showDisplay) {
 
+display = (
+<div>
 
+    {this.state.peopleArray.map(peopleArray => {
 
         return (
+        <Output 
+        name={peopleArray.name}
+        age={peopleArray.age}
+/>
+    })}
+    
+        </div>
+    )}
 
-            <div> <h1>test Quiz </h1>
-                <button
-                    onClick={this.togglePersonsHandler}>
-        show / hide
-        </button>
-            {this.state.showOutput ?
-                <div className="box">
-                <Output
-                    userName={this.state.username}
 
-                />
-            </div> : null
-            }
-            <div className="box"> <Input changed={this.usernameChangedHandler}
-                currentName={this.state.username} /></div>
-            </div >
 
-        )
 
-    }
+return (
+
+<div> Welcome
+    
+<Input/>
+{display}
+    
+    
+    </div>
+
+)
+
+
+
+
+
 
 
 
 }
 
+}
 export default App;

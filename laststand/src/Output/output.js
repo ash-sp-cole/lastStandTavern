@@ -1,17 +1,19 @@
 import React from 'react';
 
 
-
 const Output = (props) => {
-return (
 
+    return (
+<div className="box"> 
+<h1>
+{props.name}
+</h1>
+<h5>
+{props.age}    
+</h5>
+ </div>
 
-<div> <h3> Text display : User - </h3>
-
-<h3> {props.userName}</h3>
-</div>
-)
-
+    )
 }
 
 
