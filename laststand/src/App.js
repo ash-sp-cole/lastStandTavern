@@ -7,13 +7,20 @@ class App extends Component {
 
 render () {
 
+state {
+
+    let text ;
+
+}
+
+
 
     return (
 
         <div> <h1>test Quiz </h1> 
     
-        <div className ="box"> <Output/></div>
-        <div className ="box"> <Input/></div>
+        <div className ="box"> <Output /></div>
+        <div className ="box"> <Input name="ash"/></div>
         </div>
 
     )
