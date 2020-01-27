@@ -6,9 +6,9 @@ const Output = (props) => {
 return (
 
 
-<div> <h3> Text ENTER </h3>
+<div> <h3> Text display : User - </h3>
 
-<input type="text">{props.children}</input>
+<h3> {props.userName}</h3>
 </div>
 )
 
