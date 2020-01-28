@@ -14,7 +14,7 @@ peopleArray:
 {name: "Sam",age : 19},
 {name: "Daniel",age : 64}
 ],
-showDisplay:  false,
+showDisplay:  true,
 freeText: ''
 
     }
@@ -39,6 +39,20 @@ showChangeHandler = (e)=> {
 
 }
 
+deleteChangeHandler = (peopleArrayIndex) => {
+
+const peopleArray = this.state.peopleArray.slice();
+peopleArray.splice(peopleArrayIndex, 1);
+this.setState({
+    peopleArray: peopleArray
+})
+
+
+
+
+}
+
+
 render(){
 
 let display = null;
@@ -47,9 +61,11 @@ if (this.state.showDisplay) {
 
 display = (
 <div>
-    {this.state.peopleArray.map( peopleArray => {
+    {this.state.peopleArray.map( (peopleArray,index) => {
 
         return <Output 
+
+            click={()=> this.deleteChangeHandler(index)}
             name={peopleArray.name} age={peopleArray.age} freeText={this.state.freeText}
         />
     }
