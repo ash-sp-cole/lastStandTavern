@@ -9,7 +9,8 @@ const Output = (props) => {
 {props.name}
 </h1>
 <h5>
-{props.age}    
+{props.age}  
+{props.freeText}  
 </h5>
  </div>
 

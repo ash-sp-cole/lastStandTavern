@@ -1,11 +1,14 @@
  import React from 'react';
 
- const Input = () => {
+ const Input = (props) => {
 
 return (
 
 
-<div> Input</div>
+<div className="box"> <hr/> <br/><br/>Input student search   : 
+    <input type ="text" onChange = {props.freeText}></input> <br/> <br/><hr/>
+
+</div>
 
 )
 
