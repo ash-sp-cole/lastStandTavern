@@ -1,21 +1,18 @@
 import React from 'react';
 
 
-const Output = (props) => {
+const Display = (props) => {
 
-    return (
-<div className="box"> 
-<h1>
-{props.name}
-</h1>
-<h5>
-{props.age}  
-{props.freeText}  
-</h5>
- </div>
 
-    )
+return (
+    <div className="box">{props.output}
+    
+    </div>
+)
+
+
+
+
 }
 
-
-export default Output;
+export default Display;
