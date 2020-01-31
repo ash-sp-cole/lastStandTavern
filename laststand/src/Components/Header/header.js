@@ -1,24 +1,22 @@
 
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/nav';
+import {Link} from 'react-router-dom';
 
-const Header = () => {
+
+const NavBar = () => {
 
    return ( 
+<div> 
+    <h5>
+      NAVBAR
+    </h5>
+<ul>
+  <li><Link to ="/Home"> Home</Link></li>
+  <li><Link to ="/About"> About </Link></li>
+  <li><Link to ="/Topics"> Topics </Link></li>
+</ul>
+</div>
 
-<Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">array</Nav.Link>
-    
-    </Nav>
-    
-  </Navbar.Collapse>
-</Navbar>
    )}
 
-export default Header;
+export default NavBar;
