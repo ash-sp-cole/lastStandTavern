@@ -4,7 +4,7 @@ import Display from './Output/output';
 import Validate from './Validate/validate';
 import Button from 'react-bootstrap/Button';
 
-import Header from './Header/header';
+import Header from './Components/Header/header';
 
 class App extends Component {
 
