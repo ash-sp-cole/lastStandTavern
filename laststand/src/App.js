@@ -4,6 +4,8 @@ import Display from './Output/output';
 import Validate from './Validate/validate';
 import Button from 'react-bootstrap/Button';
 
+import Header from './Header/header';
+
 class App extends Component {
 
 state = {
@@ -42,7 +44,7 @@ render(){
 return (
 
 <div> 
-    
+    <Header/>
         <Input input={this.InputChangeHandler}/>
         <Button variant="primary" onClick= {this.buttonChangeHandler}>Submit</Button>
         <Display output={this.state.input}/>
