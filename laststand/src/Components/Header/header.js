@@ -11,7 +11,7 @@ const NavBar = () => {
 
 
 
-<Navbar bg="light" expand="lg">
+<Navbar class="navbar bg-transparent navbar-fixed-top">
   <Navbar.Brand as={Link} to="/">Last Stand Tavern</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
