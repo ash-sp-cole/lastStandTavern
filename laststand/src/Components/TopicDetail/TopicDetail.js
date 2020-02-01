@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom';
 
 
 const TopicDetail = ({match}) =>{
+    console.log('topicdetail', match);
     return(
+  
         <div>
 
         <h3>
