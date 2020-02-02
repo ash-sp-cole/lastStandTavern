@@ -14,18 +14,18 @@ const NavBar = () => {
    return ( 
 <div className="style"> 
 
-<h3 className="right">Last Stand Tavern</h3>
+<h3 className="right">Lаst Ѕtanđ Τavern</h3>
 
 
 <Navbar.Collapse class="navbar bg-transparent navbar-fixed-top " >
-  <Navbar.Brand as={Link} to="/" className="style" >{element}</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/" className="style" >Ф</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
     <Nav className="mr-auto"className="justify-content-end"  >
    
-      <Nav.Link as={Link} to="/About"  className="tabs">Our Story</Nav.Link>
-      <Nav.Link as={Link} to="/Home"  className="tabs">Menu</Nav.Link>
-      <Nav.Link as={Link} to="/Topics" className="tabs">Events</Nav.Link>
+      <Nav.Link as={Link} to="/About"  className="tabs">Ôur Story</Nav.Link>
+      <Nav.Link as={Link} to="/Home"  className="tabs">Мenu</Nav.Link>
+      <Nav.Link as={Link} to="/Topics" className="tabs">Ёvents</Nav.Link>
      
     </Nav>
    

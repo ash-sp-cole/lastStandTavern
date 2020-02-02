@@ -4,3 +4,20 @@ color: white;
 text-align: right !important;
 margin-right: 100px;
 }
+
+
+.caroBox {
+
+    height: 55%;
+    width: 50%;
+    float: right;
+
+
+}
+
+img {
+ 
+height: 70%!important;
+width: 45vw !important;
+
+}

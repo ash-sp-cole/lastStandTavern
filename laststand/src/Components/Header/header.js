@@ -12,7 +12,7 @@ const NavBar = () => {
 
 
 <Navbar class="navbar bg-transparent p justify-content-center">
-  <Navbar.Brand as={Link} to="/">Last Stand Tavern</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/">Last Stanđ Tavern</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
