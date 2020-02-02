@@ -15,14 +15,15 @@ const NavBar = () => {
 
 
 
-<Navbar.Collapse class="navbar bg-transparent navbar-fixed-top"  >
-  <Navbar.Brand as={Link} to="/" className="style" >Last Stand Tavern</Navbar.Brand>
+<Navbar.Collapse class="navbar bg-transparent navbar-fixed-top " >
+  <Navbar.Brand as={Link} to="/" className="style" >Home</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-    <Nav className="mr-auto"  >
-      <Nav.Link as={Link} to="/Home"  className="tabs">Home</Nav.Link>
-      <Nav.Link as={Link} to="/About"  className="tabs">About</Nav.Link>
-      <Nav.Link as={Link} to="/Topics" className="tabs">Topics</Nav.Link>
+    <Nav className="mr-auto"className="justify-content-end"  >
+   
+      <Nav.Link as={Link} to="/About"  className="tabs">Our Story</Nav.Link>
+      <Nav.Link as={Link} to="/Home"  className="tabs">Menu</Nav.Link>
+      <Nav.Link as={Link} to="/Topics" className="tabs">Events</Nav.Link>
      
     </Nav>
    

@@ -8,15 +8,15 @@ const About = (props) => {
 
 
 return (
-<div >
-<Jumbotron >
-  <h1>Hello, world!</h1>
+<div>
+<Jumbotron className="Style">
+  <h1>It's not just a Sports Bar, it's a 
+DESTINATION!!</h1>
   <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+   We keep things Simple here at " The Last Stand Tavern ". Good food with Good people!
   </p>
   <p>
-    <Button variant="primary">Learn more</Button>
+    <Button variant="primary">Learn more about our history</Button>
   </p>
 </Jumbotron>
 </div>

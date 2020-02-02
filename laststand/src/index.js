@@ -14,3 +14,9 @@ ReactDOM.render(
 </Router>, document.querySelector('#root')
 
 );
+
+// menu
+// our story
+// events
+// jobs 
+// contact

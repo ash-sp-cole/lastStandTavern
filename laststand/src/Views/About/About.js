@@ -1,28 +1,60 @@
+
+
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
-import './about.css';
-const About = (props) => {
+import Modal from 'react-bootstrap/Modal';
 
 
+function MydModalWithGrid(props) {
+  return (
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Using Grid in Modal
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Container>
+          <Row className="show-grid">
+            <Col xs={12} md={8}>
+              <code>.col-xs-12 .col-md-8</code>
+            </Col>
+            <Col xs={6} md={4}>
+              <code>.col-xs-6 .col-md-4</code>
+            </Col>
+          </Row>
 
-
-return (
-<div>
-<Jumbotron style={style}>
-  <h1>Hello, world!</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <p>
-    <Button variant="primary">Learn more</Button>
-  </p>
-</Jumbotron>
-</div>
-
-)
-
+          <Row className="show-grid">
+            <Col xs={6} md={4}>
+              <code>.col-xs-6 .col-md-4</code>
+            </Col>
+            <Col xs={6} md={4}>
+              <code>.col-xs-6 .col-md-4</code>
+            </Col>
+            <Col xs={6} md={4}>
+              <code>.col-xs-6 .col-md-4</code>
+            </Col>
+          </Row>
+        </Container>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
 }
 
-export default About;
+function App() {
+  const [modalShow, setModalShow] = useState(false);
+
+  return (
+    <ButtonToolbar>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch modal with grid
+      </Button>
+
+      <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} />
+    </ButtonToolbar>
+  );
+}
+
+render(<About />);
