@@ -22,9 +22,10 @@ padding-right: 10px;
 .right {
 
     color: white !important;
-    font-size: 1.8em !important;
+    font-size: 2.8em !important;
     padding-right: 10px;
+    bottom: 0;
     position: absolute;
-    top: 50px;
+    
 
 }
