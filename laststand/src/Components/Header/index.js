@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome} from '@fortawesome/free-solid-svg-icons';
+import {Animated} from "react-animated-css";
 
 const NavBar = () => {
 
@@ -14,7 +15,11 @@ const NavBar = () => {
    return ( 
 <div className="style"> 
 
-<h3 className="right">Lаst Ѕtanđ Τavern</h3>
+<h3 className="right">
+<Animated animationIn="fadeInRight" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
+Lаst Ѕtanđ Τavern
+</Animated>
+</h3>
 
 
 <Navbar.Collapse class="navbar bg-transparent navbar-fixed-top " >

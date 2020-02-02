@@ -28,3 +28,28 @@ font-size: 2.1em !important;
         
         }
  }
+ 
+#Drink {
+    color: white !important;
+    
+  
+    
+    
+    }
+
+ #Eat:hover{
+
+    text-decoration: underline;
+
+
+}
+
+#Drink:hover {
+    text-decoration: underline;
+    
+}    
+
+#Visit:hover {
+    text-decoration: underline;
+    
+}    

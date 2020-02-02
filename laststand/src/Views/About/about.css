@@ -3,6 +3,7 @@ background: none !important;
 color: white;
 text-align: right !important;
 margin-right: 100px;
+padding-top: 35vh;
 }
 
 
@@ -17,7 +18,21 @@ margin-right: 100px;
 
 img {
  
-height: 70%!important;
-width: 45vw !important;
+size: inherit !important;
+
+}
+.butt{
+    color: white !important;
+}
+
+.styleModal {
+
+   
+        background: none !important;
+      
+       
+       
+        padding-top: 3vh;
+        
 
 }
