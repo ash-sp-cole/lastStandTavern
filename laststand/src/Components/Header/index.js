@@ -29,7 +29,7 @@ Lаst Ѕtanđ Τavern
     <Nav className="mr-auto"className="justify-content-end"  >
    
       <Nav.Link as={Link} to="/About"  className="tabs">Ôur Story</Nav.Link>
-      <Nav.Link as={Link} to="/Home"  className="tabs">Мenu</Nav.Link>
+      <Nav.Link as={Link} to="/Menu"  className="tabs">Мenu</Nav.Link>
       <Nav.Link as={Link} to="/Topics" className="tabs">Ёvents</Nav.Link>
      
     </Nav>
