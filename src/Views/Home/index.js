@@ -17,7 +17,8 @@ render() {
     
     <Col></Col>   
     <Col id="Eat" ><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
-    Eat
+    Eat 
+
 </Animated></Col>
 <Col id="Drink"><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
 Đrink
