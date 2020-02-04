@@ -61,7 +61,7 @@ const About = (props) => {
 
         </Modal>
       </>
-      );
+     
 </div>
 
   )

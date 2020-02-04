@@ -8,6 +8,7 @@ import NavBar from './Components/Header';
 import {Route, Switch, Redirect} from 'react-router-dom';
 import TopicList from './Views/TopicList/TopicList';
 import Contact from './Views/Contact';
+import Event from './Events/index';
 
 
 export const Routes = () => {
@@ -22,6 +23,7 @@ return (
     <Route exact path="/About" component={About}/>
     <Route exact path="/Menu" component={Menu}/>
     <Route exact path="/Contact" component={Contact}/>
+    <Route exact path="/Event" component={Event}/>
     {/* <Route exact path="/Topics" component={TopicList}/>
     <Route exact path="/Topics/:topicId" component={TopicList}/> */}
     <Route component ={NoMatch} />

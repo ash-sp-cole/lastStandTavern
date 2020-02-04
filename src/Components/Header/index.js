@@ -30,7 +30,7 @@ Lаst Ѕtanđ Τavern
    
       <Nav.Link as={Link} to="/About"  className="tabs">Ôur Story</Nav.Link>
       <Nav.Link as={Link} to="/Menu"  className="tabs">Мenu</Nav.Link>
-      <Nav.Link as={Link} to="/Topics" className="tabs">Ёvents</Nav.Link>
+      <Nav.Link as={Link} to="/Event" className="tabs">Ёvents</Nav.Link>
      
     </Nav>
    
