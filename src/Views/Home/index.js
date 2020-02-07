@@ -5,16 +5,28 @@ import Col from 'react-bootstrap/Col';
 import {Animated} from "react-animated-css";
 import  { useState } from 'react';
 
+
+
+
+
+
 class Home extends Component  {
 
-// state = {
-    
+changeToHome () {
+      document.body.style.backgroundImage =  "url(/public/Assests/deckTables.jpg)"; 
+}
 
+changeToEat () {
+    document.body.style.backgroundImage =  "url(/public/Assests/table.jpg)"; 
+}
+changeToDrink() {
+    document.body.style.background = "green";
 
-// }
+}
+changeToVisit() {
+    document.body.style.background = "red";
 
-
-
+}
 render() {
     return (
 
@@ -23,16 +35,16 @@ render() {
     <Row className="rowIntro">
     
     <Col></Col>   
-    <Col id="Eat" ><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
+    <Col id="Eat"onMouseEnter={this.changeToEat} onMouseLeave={this.changeToHome}><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
     Eat 
 
 </Animated></Col>
-<Col id="Drink"><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
+ <Col id="Drink"onMouseEnter={this.changeToDrink} onMouseLeave={this.changeToHome} ><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
 Đrink
 </Animated></Col>
-<Col id="Visit"><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
+<Col id="Visit" onMouseEnter={this.changeToVisit} onMouseLeave={this.changeToHome}><Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}>
 Vίsίt
-</Animated></Col>
+</Animated></Col> 
     
   </Row>
     </container>
