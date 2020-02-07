@@ -6,7 +6,7 @@ import NoMatch from './Views/NoMatch';
 import './Views/Home/home.css';
 import NavBar from './Components/Header';
 import {Route, Switch, Redirect} from 'react-router-dom';
-import TopicList from './Views/TopicList/TopicList';
+
 import Contact from './Views/Contact';
 import Event from './Events/index';
 
