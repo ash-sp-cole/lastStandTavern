@@ -12,21 +12,21 @@ import  { useState } from 'react';
 
 class Home extends Component  {
 
-changeToHome () {
-      document.body.style.backgroundImage =  "url(/public/Assests/deckTables.jpg)"; 
-}
+// changeToHome () {
+//       document.body.style.backgroundImage =  "url(/public/Assests/deckTables.jpg)"; 
+// }
 
-changeToEat () {
-    document.body.style.backgroundImage =  "url(/public/Assests/table.jpg)"; 
-}
-changeToDrink() {
-    document.body.style.background = "green";
+// changeToEat () {
+//     document.body.style.backgroundImage =  "url(/public/Assests/table.jpg)"; 
+// }
+// changeToDrink() {
+//     document.body.style.background = "green";
 
-}
-changeToVisit() {
-    document.body.style.background = "red";
+// }
+// changeToVisit() {
+//     document.body.style.background = "red";
 
-}
+// }
 render() {
     return (
 
