@@ -2,7 +2,7 @@
 body{
 
 
-    background: url(./table.jpg) no-repeat center center fixed; 
+    background: url(../About/porch.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,7 +30,7 @@ background-color: rgb(126, 126, 196);
 .rowIntro {
 
 text-align: right;
-padding-top: 35vh;
+padding-top: 65vh;
 width: 97% !important;
 font-family: 'Alegreya', serif !important;
 font-size: 2.1em !important;
@@ -42,7 +42,7 @@ font-size: 2.1em !important;
     .rowIntro {
 
         text-align: right;
-        padding-top: 35vh;
+        padding-top: 60vh;
         width: 97% !important;
         font-family: 'Alegreya', serif !important;
         font-size: 1.1em !important;

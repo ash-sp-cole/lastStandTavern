@@ -47,10 +47,10 @@ DESTINATION!!</h1>
           <Modal.Header closeButton>
             <Modal.Title>Our history</Modal.Title>
           </Modal.Header>
-          <Modal.Body >
+          <Modal.Body>
 
 
-            <Card style={{ width: '18rem', margin:'auto' }}>
+            <Card style={{ width: '18rem', margin:'auto'}}>
               <Card.Img variant="top" src={logo} />
              
             </Card>
