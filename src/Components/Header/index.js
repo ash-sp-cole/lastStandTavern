@@ -22,11 +22,11 @@ Lаst Ѕtanđ Τavern
 </h3>
 
 
-<Navbar.Collapse class="navbar bg-transparent navbar-fixed-top " >
-  <Navbar.Brand as={Link} to="/" className="style" >Ф</Navbar.Brand>
+<Navbar.Collapse class="navbar bg-light navbar-fixed-top " >
+  <Navbar.Brand as={Link} to="/" className="navText" >Ф</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-    <Nav className="mr-auto"className="justify-content-end"  >
+    <Nav className="mr-auto"className="justify-content-end" className="style" >
    
       <Nav.Link as={Link} to="/About"  className="tabs">Ôur Story</Nav.Link>
       <Nav.Link as={Link} to="/Menu"  className="tabs">Мenu</Nav.Link>

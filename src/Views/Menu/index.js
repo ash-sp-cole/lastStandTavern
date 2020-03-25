@@ -13,8 +13,6 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 const About = (props) => {
-
-
   const [xlshow, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
