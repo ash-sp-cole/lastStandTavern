@@ -14,8 +14,5 @@ ReactDOM.render(
 
 );
 
-// menu
-// our story
-// events
 // jobs 
 // contact
