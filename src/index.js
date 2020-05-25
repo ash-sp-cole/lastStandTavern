@@ -7,9 +7,7 @@ import {Routes }from './routes';
 
 ReactDOM.render(
 <Router>
-
 <Routes/>
-
 </Router>, document.querySelector('#root')
 
 );
